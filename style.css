@@ -1,0 +1,117 @@
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+    
+}
+body{
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.display{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(27 90 107);
+    padding: 5px;
+    border: 6px solid #c5ccd7;
+    border-radius: 35px;
+    font-size: 27px;
+    color: azure;
+    
+}
+.categoryWidth{
+    width: 245px;
+}
+
+.descriptionWidth{
+    width: 285px;
+}
+#addButton{
+    width: 91px;
+    height: 40px;
+    margin: 0px 38px;
+    background-color: black;
+    color: floralwhite;
+    border-radius: 13px;
+    font-size: large;
+}
+#backButton{
+    width: 91px;
+    height: 40px;
+    /* margin: 0px 45px; */
+    background-color: black;
+    color: floralwhite;
+    border-radius: 13px;
+    font-size: large;
+}
+
+.budgetDisplay{
+    display: flex;
+    background-color: hsl(284, 35%, 19%);
+    justify-content: space-evenly;
+    border-radius: 50px;
+    margin: 7px 0px;
+    font-size: 21px;
+    text-align: center;
+    color: cornsilk;
+
+}
+.mainHead{
+    color: blue;
+    text-align: center;
+    font-size: 45px;
+}
+#setBudget{
+    /* border: 2px solid black; */
+    height: 95px;
+}
+#setBudgetAmount{
+    height: 25px;
+    width: 20%;
+    position: absolute;
+    left: 38%;
+    background-color: azure;
+    font-size: 22px;
+}
+#btnSetBudget{
+    position: absolute;
+    top: 25%;
+    left: 42%;
+    height: 6%;
+    width: 11%;
+    background: darkturquoise;
+    font-size: 21px;
+    color: white;
+}
+#btnAddItems{
+    position: absolute;
+    right: 15%;
+    top: 18%;
+    height: 6%;
+    width: 12%;
+    background-color: #588887;
+    color: white;
+    font-size: 24px;
+}
+#addListForm{
+    position: relative;
+    left: 38%;
+}
+#addListForm > input{
+   width: 18%;
+   font-size: 20px;
+}
+#addListForm > select{
+    width: 18%;
+    font-size: 20px;
+ }
+#showExpenseList > h1{
+    color: blue;
+    font-size: 39px;
+    position: relative;
+    left: 41%;
+    margin: 50px 0px;
+}

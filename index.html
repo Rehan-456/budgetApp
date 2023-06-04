@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./rehan.js" defer></script>
+</head>
+
+<body>
+    <h1 class="mainHead">What is Your Budget ?</h1>
+    <div id="setBudget">
+        <input type="text" placeholder="Enter your Budget" id="setBudgetAmount">
+        <input type="submit" value="Set Budget" id="btnSetBudget" onclick=setBudget()>
+    </div>
+    <div id="addItems" class="hidden">
+        <input type="submit" value="Add Expense" id="btnAddItems" onclick=addItems()>
+    </div>
+    <div>
+        <!-- <div id="expenseList">
+            <h1>Expense List</h1>
+        </div> -->
+        <div id="addListForm" class="hidden">
+            <!-- <h2>Add Expense</h2> -->
+            <label for="totalAmount">Total Amount</label>     
+            <br>
+            <input type="number" id="totalAmount" name="totalAmount" placeholder="$">
+            
+
+            <br>
+            <br>
+            <label for="date">Payment Date:</label>
+            <br>
+            <input type="date" name="date" id="date">
+            <br>
+            <br>
+            <label for="category">Choose a Category</label>
+            <br>
+            <select name="category" id="category" aria-placeholder="category">
+                <option value="" disabled selected>Category</option>
+                <option value="Restaurant and cafe" >Restaurant and cafe</option>
+                <option value="Clothes and shopping">Clothes and shopping</option>
+                <option value="credit and loans">credit and loans</option>
+                <option value="Gift cards">Gift cards</option>
+            </select>
+            <br>
+            <br>
+            <label for="description">Discription</label>
+            <br>
+            <input type="text" id="description" name="description" placeholder="$">
+            <br>
+            <br>
+            <!-- <input type="submit" value="submit" id="itemsAdded" onclick=home()> -->
+            <button onclick=home() id="addButton">ADD</button>
+            <button onclick=back() id="backButton">BACK</button>
+            
+
+        </div>
+    </div>
+    <div id="showExpenseList" class="hidden">
+        <h1>Expense List</h1>
+    </div>
+    <div id="budgetOverview" class="hidden">
+        
+        <div>
+            <h3>Total Budget </h3>
+            <h4 id="totalBudgetOverview"></h4>
+        </div>
+
+        <div>
+            <h3>Expense </h3>
+            <h4 id="expenseOverview">0</h4>
+        </div>
+        
+        <div>
+            <h3>Balance</h3>
+            <h4 id="balanceOverview"></h4>
+        </div>
+        
+        
+    </div>
+
+
+</body>
+
+</html>
